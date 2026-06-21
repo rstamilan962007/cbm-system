@@ -1,0 +1,5 @@
+Temperature,Vibration,RunningHours,Status
+45,0.3,100,Normal
+55,0.5,200,Normal
+70,0.8,400,Warning
+85,1.2,600,Maintenance
