@@ -122,3 +122,48 @@ th,td{
     border-radius:12px;
     border:1px solid #334155;
 }
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.topbar p{
+    color:#94A3B8;
+}
+
+.user-panel{
+    background:#1E293B;
+    padding:12px 20px;
+    border-radius:12px;
+    border:1px solid #334155;
+}
+
+.health-circle{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:8px solid #22C55E;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:15px;
+    margin-bottom:10px;
+    font-size:22px;
+    font-weight:bold;
+    color:#22C55E;
+}
+
+.card{
+    background:#1E293B;
+    padding:25px;
+    border-radius:15px;
+    border:1px solid #334155;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(56,189,248,0.4);
+    }
