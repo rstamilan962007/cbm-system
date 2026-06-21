@@ -2,11 +2,17 @@
 <html>
 <head>
     <title>CBM Dashboard</title>
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
+
 <body>
 
 <div class="sidebar">
+
     <div class="logo">
         <h2>⚙ CBM SYSTEM</h2>
         <p>Smart Monitoring</p>
@@ -21,6 +27,7 @@
         <li>📄 Reports</li>
         <li>📅 Calendar</li>
     </ul>
+
 </div>
 
 <div class="main-content">
@@ -57,7 +64,60 @@
 
     </div>
 
+    <div class="chart-container">
+
+        <h2>Machine Performance Trend</h2>
+
+        <canvas id="myChart"></canvas>
+
+    </div>
+
+    <div class="alerts-section">
+
+        <h2>Recent Alerts</h2>
+
+        <table>
+
+            <tr>
+                <th>Machine</th>
+                <th>Issue</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>M-101</td>
+                <td>High Vibration</td>
+                <td class="warning">Warning</td>
+            </tr>
+
+            <tr>
+                <td>M-205</td>
+                <td>Overheating</td>
+                <td class="critical">Critical</td>
+            </tr>
+
+        </table>
+
+    </div>
+
 </div>
 
+<script>
+
+const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['10AM','12PM','2PM','4PM','6PM','8PM'],
+        datasets: [{
+            label: 'Temperature',
+            data: [45,50,55,52,60,58]
+        }]
+    }
+});
+
+</script>
+
 </body>
-  </html>
+</html>
