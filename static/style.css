@@ -105,3 +105,20 @@ th,td{
     color:#EF4444;
     font-weight:bold;
 }
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.topbar p{
+    color:#94A3B8;
+}
+
+.user-panel{
+    background:#1E293B;
+    padding:12px 20px;
+    border-radius:12px;
+    border:1px solid #334155;
+}
